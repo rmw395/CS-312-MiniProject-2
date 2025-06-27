@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Generate a Joke!</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+
+        #Any {
+            background-color: #3498db;
+        }
+
+        #Programming {
+            background-color: #2ecc71;
+        }
+
+        #Misc {
+            background-color: #f1c40f;
+        }
+
+        #Pun {
+            background-color: #e74c3c;
+        }
+
+        #Dark {
+            background-color: #0069ff;
+        }
+
+        #Spooky {
+            background-color: chocolate;
+        }
+
+        #Christmas {
+            background-color: darkolivegreen;
+        }
+
+        .response-area {
+            margin-top: 20px;
+            background-color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <button type="submit" id="Any" onclick="window.location.href='/Any'">Any Category</button>
+    <button id="Programming" onclick="window.location.href='/Programming'">Programming Jokes</button>
+    <button id="Dark" onclick="window.location.href='/Dark'">Dark Jokes</button>
+    <button id="Spooky" onclick="window.location.href='/Spooky'">Spooky Jokes</button>
+    <button id="Christmas" onclick="window.location.href='/Christmas'">Christmas Jokes</button>
+    <button id="Misc" onclick="window.location.href='/Misc'">Misc Jokes</button>
+    <button id="Pun" onclick="window.location.href='/Pun'">Puns</button>
+
+    <div class="response-area">
+        <p>
+            <%=content%>
+        </p>
+    </div>
+</body>
+
+</html>
