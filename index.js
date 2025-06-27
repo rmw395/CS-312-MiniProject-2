@@ -12,7 +12,7 @@ app.get("/", (req, res) => {
 app.get("/Any", async (req, res) => {
     try {
       const result = await axios.get(API_URL + "/Any");
-      res.render("index.ejs", { content: JSON.stringify(result.joke) });
+      res.render("index.ejs", { content: JSON.stringify(result.data) });
     } catch (error) {
       res.status(404).send(error.message);
     }
